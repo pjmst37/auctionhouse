@@ -18,6 +18,11 @@ public class Auction {
                 if (startDate.isAfter(LocalDateTime.now())) {
                     if (endDate.isAfter(startDate)) {
                         if (startingBid.doubleValue() >= 0) {
+                            this.seller = seller;
+                            this.itemDescription = itemDescription;
+                            this.startingBid = startingBid;
+                            this.startDate = startDate;
+                            this.endDate = endDate;
                             return true;
                         } else {
                             return false;
