@@ -10,6 +10,8 @@ public class Auction {
     private BigDecimal startingBid;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
+    private User highBidder;
+    private BigDecimal currentBid;
 
     public boolean createAuction(User seller, String itemDescription, BigDecimal startingBid, LocalDateTime startDate,
                                  LocalDateTime endDate) {
@@ -41,6 +43,61 @@ public class Auction {
         }
     }
 
+    public User getSeller() {
+        return seller;
+    }
+
+    public void setSeller(User seller) {
+        this.seller = seller;
+    }
+
+    public String getItemDescription() {
+        return itemDescription;
+    }
+
+    public void setItemDescription(String itemDescription) {
+        this.itemDescription = itemDescription;
+    }
+
+    public BigDecimal getStartingBid() {
+        return startingBid;
+    }
+
+    public void setStartingBid(BigDecimal startingBid) {
+        this.startingBid = startingBid;
+    }
+
+    public LocalDateTime getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(LocalDateTime startDate) {
+        this.startDate = startDate;
+    }
+
+    public LocalDateTime getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(LocalDateTime endDate) {
+        this.endDate = endDate;
+    }
+
+    public User getHighBidder() {
+        return highBidder;
+    }
+
+    public void setHighBidder(User highBidder) {
+        this.highBidder = highBidder;
+    }
+
+    public BigDecimal getCurrentBid() {
+        return currentBid;
+    }
+
+    public void setCurrentBid(BigDecimal currentBid) {
+        this.currentBid = currentBid;
+    }
 }
 
 
