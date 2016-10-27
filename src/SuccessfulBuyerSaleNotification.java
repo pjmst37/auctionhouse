@@ -17,5 +17,6 @@ public class SuccessfulBuyerSaleNotification extends SaleNotification {
         this.postOffice.sendEMail(auction.getHighBidder().getUserEmail(), buyerEmail);
         System.out.println(sellerEmail);
         System.out.println(buyerEmail);
+        System.out.println(auction.getHighBidder().getUserEmail());
     }
 }

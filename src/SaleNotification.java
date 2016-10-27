@@ -10,8 +10,5 @@ public abstract class SaleNotification {
 
     public abstract void sendEmailNotification(Auction auction);
 
-    public PostOffice getPostOffice() {
-        return this.postOffice;
-    }
 
 }
